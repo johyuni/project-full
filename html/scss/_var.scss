@@ -1,0 +1,8 @@
+$mainColor:#fff;
+
+@mixin clear {
+  content:"";
+  display:block;
+  clear:both;
+}
+ 

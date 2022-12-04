@@ -1,0 +1,94 @@
+<?php include_once("../layout/header.html"); ?>
+
+<section id="join">
+  <div class="wrap">
+      <fieldset>
+      <form class="layout_wrap">
+        <legend>FULL ID 생성</legend>
+        <p>
+          <input type="text" name="first_name" placeholder="성" minlength="5" required autofocus>
+          <input type="text" name="last_name" placeholder="이름" minlength="10" required>
+        </p>
+
+        <p>
+          <span class="frome_name">국가/생년월일</span>
+          <select name="nation">
+              <option value="korea">대한민국</option>
+              <option value="USA">미국</option>
+              <option value="UK">영국</option>
+              <input type="date" name="birthday" placeholder="생년월일" min="1960-01-01" max="2021-12-31">
+          </select>
+        </p>
+      </form>
+
+      <form class="layout_wrap">
+        <p>
+          <input type="text" name="id" placeholder="ex)123@gmail.com">
+          <span class="info">새 아이디로 쓰일 메일 주소를 입력하세요.</span>
+        </p>
+
+        <p>
+          <input type="password" name="pw01" placeholder="암호를 입력하세요" required>
+          <input type="password" name="pw02" placeholder="암호 확인" required>
+        </p>
+      </form>
+
+      <form class="layout_wrap">
+        <p>
+          <select name="nation">
+              <option value="korea">+82(대한민국)</option>
+              <option value="USA">+1(미국)</option>
+              <option value="UK">+44(영국)</option>
+          </select>
+
+          <input type="text" name="phone" placeholder="전화번호" required>
+        </p>
+
+        <p>
+          <span class="frome_name">인증 수단</span>
+          <label for="sms">
+            <input type="radio" name="phone" id="sms" checked>
+            문자 메세지
+          </label>
+
+          <label for="call">
+            <input type="radio" name="phone" id="call" checked>
+            음성 메세지
+          </label>
+        </p>
+      </form>
+
+      <form class="layout_wrap">
+        <p>
+          <span class="frome_name">약관동의</span>
+
+          <label for="check01">
+            <input type="checkbox" name="check01" id="check01" required>
+            이용약관 동의(필수)
+          </label>
+
+          <label for="check02">
+            <input type="checkbox" name="check02" id="check02" required>
+            개인정보 수집·이용동의(필수)
+          </label>
+
+          <label for="check03">
+            <input type="checkbox" name="check03" id="check03">
+            무료배송,할인쿠폰 등 혜택/정보 e-mail수신 동의(선택)
+          </label>
+
+          <label for="check04">
+            <input type="checkbox" name="check04" id="check04" required>
+            본인은 만 14세 이상입니다.(필수)
+          </label>
+        </p>
+      </form>
+
+        <div class="btns btn-login">
+            <a href="#">회원가입</a>
+        </div>
+      </fieldset>
+  </div>
+</section>
+
+<?php include_once("../layout/footer.html"); ?>

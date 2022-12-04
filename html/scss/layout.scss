@@ -1,0 +1,149 @@
+@import './_var.scss';
+@charset "UTF-8";
+
+/* 폰트패밀리사용 */
+/* CSS rules to specify families
+font-family: 'Noto Sans KR', sans-serif; */
+
+/* ------------------------<<공통클래스>>------------------------------- */
+
+.wrap {
+  width: 1280px;
+  margin: 10vh auto;
+}
+
+html {
+  font-family: "Noto Sans KR";
+}
+
+.prod_info {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  padding-top: 8px;
+}
+
+.prod_name a {
+  display: block;
+  color: #333;
+}
+
+.prod_price {
+  font-size:600;
+
+  span {
+    &:first-child {
+      color: #820d66;
+      padding-right: 6px;
+    }
+
+    &:last-child {
+      color: #333;
+    }
+  }
+}
+
+.prod_dc {
+  font-size: 14px;
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* ------------------------<<join시작>>--------------------------- */
+
+
+// #join{}
+//
+// .layout_wrap {
+//   width: 30%;
+//   margin: 0 auto;
+// }
+//
+// fieldset {
+//   legend {
+//     font-size: 30px;
+//     font-weight:bold;
+//     margin-bottom: 10px;
+//     text-align: center;
+//   }
+//
+//   p {
+//     margin: 20px 0;
+//
+//     &:after{
+//       @include clear;
+//     }
+//
+//     &:nth-child(8) label {
+//       display: inline-block;
+//       font-size: 12px;
+//       width: 24%;
+//       margin: 0 0 0 10px;
+//       text-align: right;
+//     }
+//
+//     &:nth-child(9) label {
+//       display: block;
+//       font-size: 12px;
+//       line-height: 20px;
+//       float: left;
+//       width: 100%;
+//     }
+//
+//     .info {
+//       font-size: 12px;
+//       color: #666;
+//       float: left;
+//     }
+//   }
+// }
+//
+// .frome_name {
+//   font-weight: bold;
+//   font-size: 12px;
+//   line-height: 20px;
+// }
+//
+// #join {
+//   input {
+//     &[type="text"], &[type="password"], &[type="date"] {
+//       margin: 6px auto;
+//       display: block;
+//       line-height: 30px;
+//       width: 94%;
+//       border-radius: 4px;
+//       border: solid 1px #ddd;
+//       padding: 10px;
+//       outline: none;
+//     }
+//
+//     &[type="submit"] {
+//       display: block;
+//       margin: 0 auto;
+//     }
+//
+//     &:focus {
+//       background-color: #eee;
+//     }
+//   }
+//
+//   select {
+//     margin: 6px auto;
+//     display: block;
+//     line-height: 30px;
+//     width: 94%;
+//     border-radius: 4px;
+//     border: solid 1px #ddd;
+//     padding: 10px;
+//     outline: none;
+//     height: 50px;
+//     width: 100%;
+//
+//     &:focus {
+//       background-color: #eee;
+//     }
+//   }
+// }
+
+/* ------------------------<<join끝>>--------------------------- */
+/* ------------------------<<header시작>>--------------------------- */
